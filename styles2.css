@@ -1,0 +1,32 @@
+*{
+		margin:0;
+		padding:0;
+	}
+	
+
+	
+    
+    
+    #container{
+        margin:auto auto;
+        width: 800px;
+        min-height: 800px;
+        background-image: url('images/download.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+
+    }
+    /*Type selector*/
+	body{
+        background-image: url('images/1.png'), url('images/2.png'), url('images/3.png'), url('images/4.png');
+        background-position: top left, top right, bottom left, bottom right;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+
+
