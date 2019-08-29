@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>Home Page</title>
+            <meta charset="utf-8"/>
+            <meta name="authour" content="Anuj Maharjan"/>
+            <link href="style.css" rel="stylesheet" type="text/css"/>
+            
+        <script src="Script.js"></script>
+        </head>
+        <body bgcolor="#000000">
+                <body onload="currentDate()">
+                      
+                
+                    <div class="row">
+                        <div class="col100">
+                            <div id="currentDate"></div><br>
+                            <div class="clock">
+                                <span id="hh"></span>:
+                                <span id="mm"></span>:
+                                <span id="ss"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                            <div class="nav">
+                              <a href="Home.html">Home</a>
+                              <a href="news.html">News</a>
+                              <a href="MainEvent.html">Main Event</a>
+                              <a href="Registration.html">Registration</a>
+                              <a href="about.html">About</a>
+                              
+                            </div>
+
+                            <div class="p1">
+                                    <script src="validations.js"></script>
+                                    <div id="error"></div>
+                                    
+                                            
+                                    <form method="POST" name="regForm" action="#" enctype="multipart/form-data" onsubmit="return validations()">
+                                        <fieldset>
+                                            <legend>Registration for the upcoming events</legend>
+                                            <table border=0 cellpadding=10 cellspacing=10 >
+                                                <tr>
+                                                    <td>Full Name of Captain or Coach</td>
+                                                    <td>
+                                                        <input type="text" name="fullname" placeholder="First Middle Last"  />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email valid for Teams</td>
+                                                    <td>
+                                                        <input id="e" type="email" name="email" placeholder="you@domain.com" />
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Password</td>
+                                                    <td>
+                                                        <input id="p" type="password" name="password" />
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>City</td>
+                                                    <td>
+                                                        <select name="AREA" size=1>
+                                                            <optgroup label="Active Teams">
+                                                                <option value="North America">North America</option>
+                                                                <option value="South America">South America</option>
+                                                                <option value="Western Europe">Western Europe</option>
+                                                                <option value="Eastern Europe">Eastern Europe</option>
+                                                                <option value="CIS">CIS</option>
+                                                                <option value="China">China </option>
+                                                                <option value="South Asia">South Asia</option>
+                                                            </optgroup>
+                                                        <optgroup label="Disbanded Teams">
+                                                                <option value="North America">North America</option>
+                                                                <option value="South America">South America</option>
+                                                                <option value="Western Europe">Western Europe</option>
+                                                                <option value="Eastern Europe">Eastern Europe</option>
+                                                                <option value="CIS">CIS</option>
+                                                                <option value="China">China </option>
+                                                                <option value="South Asia">South Asia</option>
+                                                        </optgroup>
+                                                       
+                                                    </select>
+                                                    <tr>
+                                                            <td>Name of your Team</td>
+                                                            <td>
+                                                                <input type="text" name="Team" placeholder="textarea"  />
+                                                            </td>
+                                                        </tr>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Team Created Date</td>
+                                                    <td>
+                                                        <input type="date" name="dob" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Event you want to join</td>
+                                                    <td>
+                                                        <input type="checkbox" name="epic-center" value="php" checked />epic-center
+                                                        <input type="checkbox" name="The international" value="java" />The international
+                                                        <input type="checkbox" name="Sangai Major" value="asp"/>Sangai Major
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Logo Of a Team</td>
+                                                    <td>
+                                                        <input type="file" name="upload" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Include if Your Team has won minor events</td>
+                                                    <td>
+                                                        <textarea rows=5 cols=40 name="message" >
+                                                        </textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <input type="checkbox" name="iagree" />I agree, all the informations filled by me is correct.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                            <button type="button" onclick="alert('You are now the member of the event...')">Register</button>
+                                                        <input type="reset" name="reset" value="Cancel" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </fieldset>
+                                    </form>
+                                    <script src="validations.js"></script>
+
+                                    <footer>
+                                            <div class="p1">&copy;2019;anujmaharjan.com.np,All right reserved.</div>
+                                    </footer>
+
+                            </div>
+</body>
+</html>
